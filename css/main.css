@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+  }
+  
+html, body { height: 100%;
+    height: auto;
+}
+
+body {
+    background: hsl(226, 43%, 10%);
+    color:  hsl(236, 100%, 87%); /* activo */
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {  
+    display: grid;
+    /* grid-template-columns: repeat(4, 15%); */
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 13rem;
+    grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
+    padding: 4rem 0rem 3rem 3rem;
+   
+    /* grid-gap: 10px;
+    grid-auto-rows: 10rem;
+    
+     */
+    /* grid-template-areas:"principal work play study"
+                        "principal exercise social self" ; *//* repeat(4, 200px) */; /* minmax(100px, auto) */;
+  }
+@media screen and (max-width: 412px)  { 
+  .container{
+    padding: 1rem;  
+  } 
+  }
+
+.card {
+    background-color: hsl(235, 46%, 20%);
+    color: hsl(236, 100%, 87%);
+    border-radius: 1rem;
+    border: none;
+}
+
+.principal {
+  background-color: hsl(235, 46%, 20%);
+    color: hsl(236, 100%, 87%);
+    border-radius: 1rem;
+}
+
+
+
+.interno {
+  border-radius: 1rem;
+  width: 100%;
+  height: 65%;
+  background-color: hsl(246, 80%, 60%);
+  /* top: 110px; */
+}
+
+
+.image-jeremy {
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    border: 3px solid white;
+    margin-left: 1rem;
+}
+
+.nombre {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  
+}
+
+.nombre > p{
+  font-size:  35px;
+  font-weight: 100;
+  color: white;
+}
+.acciones {
+    display: block;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    margin-left: 1rem;  
+    color:   hsl(235, 45%, 61%) ;
+    cursor: pointer;
+    
+}
+.acciones:hover {
+  color:   hsl(235, 45%, 61%) ;
+
+}
+.activado {
+  color: white
+  /* text-decoration: none; */
+}
+.activado:hover{
+  color: white;
+
+}
+.cuadro-images {
+  height: 20%;
+  background-repeat: no-repeat;
+  background-position:  90% 40%;
+  border-radius: 0rem 1rem 0rem 1rem;
+}
+
+
+
+
+.cuadro-datos {
+  color: white;
+  font-size: 18px;
+  margin-left: 1rem; 
+  
+}
+
+.cuadro-datos > .card-text {
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: hsl(235, 45%, 61%);
+  
+}
+
+.puntos{
+  display: inline-block;
+  position: absolute;
+  color: transparent; 
+  background-image: url(../images/icon-ellipsis.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  width: 10%;
+  height : 10%;
+  top: 30%;
+  left: 75%;
+  
+ }
+
+.footer {
+  color: white; 
+  font-weight: 400;
+}
+
+
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(../images/icon-work.svg)
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(../images/icon-play.svg);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(../images/icon-study.svg);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(../images/icon-exercise.svg);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(../images/icon-social.svg);
+}
+
+.self {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(../images/icon-self-care.svg);
+}
+
+
+
+
+
+
+
+
+
+.principal {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      
+  } 
+  /* .one {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    grid-area: work;
+  }
+  .two {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    grid-area: play;
+  }
+  .three {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    grid-area: study;
+  }
+  .four {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    grid-area: exercise;
+  }
+  .five {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    grid-area: social;
+  }
+  .six {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+    grid-area: self;
+  }
+  */
